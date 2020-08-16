@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <head>
+      <body>
+        <div class="header">
+          <a href="#default" class="logo">Crowd News</a>
+          <nav>
+            <ul>
+              <li><a class="active" href="#home">home</a></li>
+              <li><a href="news.html">news</a></li>
+              <li><a href="events.html">events</a></li>
+              <li><a href="#petition.html">petitions</a></li>
+              <li><a href="#me.html">me</a></li>
+            </ul>
+          </nav>
+        </div>
+      </body>
+    </head>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+
+  <body>
+    <div class="row">
+      <div class="column blank"></div>
+
+      <div class="column middleLeft" style="background-color:#aaa">
+        <form class="footer">
+          <textarea
+            id="input_box"
+            onchange="javascript:textarea_height(input_box, 15);"
+            class="textarea"
+            placeholder="Say something to change the world."
+          ></textarea>
+          <label> Hashtag </label>
+          <input type="text" id="tags" placeholder="#.." />
+          <input class="right" type="submit" onclick="getInputValue();" />
+        </form>
+
+        <h2>My Posts</h2>
+        <button class="right" type="button" onclick="updateMyPost()">
+          Refresh
+        </button>
+        <span id="most_recent">
+          Post something!
+        </span>
+      </div>
+
+      <div class="column middleRight" style="background-color:Salmon">
+        <h2 class="center">Trending Topics</h2>
+        <ul>
+          <li class="topics">First Tag</li>
+          <li class="topics">Second Tag</li>
+          <li class="topics">Third Tag</li>
+          <li class="topics">Fourth Tag</li>
+          <li class="topics">Fifth Tag</li>
+        </ul>
+      </div>
+
+      <div class="column blank"></div>
+    </div>
+
+    <script
+      async
+      src="https://cse.google.com/cse.js?cx=003998345203107307650:vvil12lbkpo"
+    ></script>
+    <div class="gcse-search"></div>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="/__/firebase/7.18.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="/__/firebase/7.18.0/firebase-analytics.js"></script>
+
+    <!-- Initialize Firebase -->
+    <script src="/__/firebase/init.js"></script>
+  </body>
+</html>
