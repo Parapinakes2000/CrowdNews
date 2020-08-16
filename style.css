@@ -1,0 +1,158 @@
+/* CSS files add styling rules to your content */
+
+body {
+  font-family: helvetica, arial, sans-serif;
+  margin: 2em;
+
+ /* background-image: url("https://cdn.glitch.com/16c33fff-e67b-4be7-8a44-cbda1a71a3ba%2Fprotest-2265287_1920.jpg?v=1597552557002");*/
+}
+
+/* style the header */
+.header {
+  color: White;
+  font-family: Impact;
+  overflow: hidden;
+  background-color: White;
+  padding: 0;
+  float: left;
+  width: 100%;
+}
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 35px;
+  font-weight: bold;
+}
+.header a:hover {
+  background-color: Salmon;
+  color: black;
+}
+.header a.active {
+  background-color: red;
+  color: white;
+}
+
+/* styling for navigation bar*/
+.nav {
+  background-color: #3;
+  overflow: hidden;
+  margin:0 auto;
+  width: 100%;
+  height: 50px;
+  float: right;
+}
+.nav a {
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color:black;
+  font-family: sans-serif;
+}
+.nav a:hover {
+  color: black;
+}
+.nav a.active {
+  background-color: Red;
+  color: white;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    text-align: center;
+    justify-content: space-between;
+}
+ul li {
+    display: inline-block;
+    float: left;
+    margin: 0 75px;
+}
+ul li a {
+    text-decoration: none;
+    padding: 20px;
+    display: block;
+    color: White;
+}
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left; 
+  }
+  .nav {
+    float: none;
+  }
+}
+
+
+
+/* For the basic webpage division */
+.column {
+  float: left;
+  padding: 10px;
+}
+.column.blank {
+  width: 10%;
+}
+.column.middleLeft {
+  width: 45%;
+  padding-right: 50px
+}
+.column.middleRight {
+  width: 25%;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* Trending Topic */
+.topics {
+  padding: 10px 10px 10px 10px
+}
+
+/* Input Box */
+.footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  position: relative;
+  top: 0;
+}
+
+.textarea {
+  width: 100%;
+  height: 100px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+  font-family: helvetica;
+  font-size: 12px;
+}
+
+
+/* Text Formatting */
+/* Centering */
+.center {
+  text-align: center;
+}
+/* Floating right */
+.right {
+  float : right;
+}
